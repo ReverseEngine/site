@@ -5,7 +5,6 @@
 		<title>Engenharia Reversa</title>
 		<style type="text/css">
 			#site{
-				//background-color:rgba(0,0,0,0.95);
 				float:left;
 				width:100%;
 			}
@@ -14,7 +13,7 @@
 				margin:0;
 				background-color:black;
 				color:#0aff0a;
-				background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/black_lozenge.png');
+				background-image: url('bg.png');
 			}
 			th{
 				text-align: left;
@@ -30,6 +29,20 @@
 			caption h2{
 				margin: 10px 0 10px 0;
 			}
+
+			a:link {
+			    color: red;
+			}
+			a:visited {
+			    color: green;
+			}
+			a:hover {
+			    color: hotpink;
+			}
+			a:active {
+			    color: blue;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -49,15 +62,68 @@
 			<tbody>
 				<tr>
 					<td>strings</td>
-					<td>https://sourceware.org/binutils/docs/binutils/strings.html</td>
+					<td><a target="_blank" href="https://sourceware.org/binutils/docs/binutils/strings.html">https://sourceware.org/binutils/docs/binutils/strings.html</a></td>
 				</tr>
 				<tr>
 					<td>objdump</td>
-					<td>https://sourceware.org/binutils/docs/binutils/objdump.html</td>
+					<td><a target="_blank" href="https://sourceware.org/binutils/docs/binutils/objdump.html">https://sourceware.org/binutils/docs/binutils/objdump.html</a></td>
 				</tr>
 				<tr>
 					<td>gdb</td>
-					<td>https://sourceware.org/gdb/onlinedocs/gdb/</td>
+					<td><a target="_blank" href="https://sourceware.org/gdb/onlinedocs/gdb/">https://sourceware.org/gdb/onlinedocs/gdb/</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table>
+		 <caption><h2>Assembly</h2></caption>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Uso</th>
+					<th>Descrição</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mov</td>
+					<td>mov destino, origem</td>
+					<td>Copia um valor da origem para o destino</td>
+				</tr>
+				<tr>
+					<td>push</td>
+					<td>push origem</td>
+					<td>Adiciona a origem na pilha</td>
+				</tr>
+				<tr>
+					<td>add</td>
+					<td>add destino, origem</td>
+					<td>Soma destino + origem e armazena o resultado em destino</td>
+				</tr>
+				<tr>
+					<td>add</td>
+					<td>add destino, origem</td>
+					<td>Soma destino + origem e armazena o resultado em destino</td>
+				</tr>
+				<tr>
+					<td>call</td>
+					<td>add label</td>
+					<td>Push no endereço atual e jump para o label</td>
+				</tr>
+				<tr>
+					<td>lea</td>
+					<td>lea destino, origem</td>
+					<td>Load Effective Addres da origem para o destino</td>
+				</tr>
+				<tr>
+					<td>test</td>
+					<td>test origem_1, origtem_2</td>
+					<td>Set condition codes according to origem_1 & origem_2</td>
+				</tr>
+				<tr>
+					<td>jne</td>
+					<td>jne label</td>
+					<td>Jump if not equal/nonzero</td>
 				</tr>
 			</tbody>
 		</table>
