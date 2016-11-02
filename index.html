@@ -4,27 +4,64 @@
 	<head>
 		<title>Engenharia Reversa</title>
 		<style type="text/css">
+			#site{
+				//background-color:rgba(0,0,0,0.95);
+				float:left;
+				width:100%;
+			}
 			body{
+				padding: 0;
+				margin:0;
 				background-color:black;
 				color:#0aff0a;
+				background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/black_lozenge.png');
 			}
 			th{
 				text-align: left;
 			}
 			table{
 				background-color:#111;
-				margin-bottom:20px;
+				margin-bottom:50px;
 				width:100%;
 			}
 			caption{
 				background-color:#222;
 			}
+			caption h2{
+				margin: 10px 0 10px 0;
+			}
 		</style>
 	</head>
 	<body>
-
+		<div id="site">
 		<h1>@EngenhariaReversa - Rank</h1>
 		<p>Criador dos desafios: Offset - @ReverseEngine</p>
+
+
+		<table>
+		 <caption><h2>Ferramentas</h2></caption>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Link</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>strings</td>
+					<td>https://sourceware.org/binutils/docs/binutils/strings.html</td>
+				</tr>
+				<tr>
+					<td>objdump</td>
+					<td>https://sourceware.org/binutils/docs/binutils/objdump.html</td>
+				</tr>
+				<tr>
+					<td>gdb</td>
+					<td>https://sourceware.org/gdb/onlinedocs/gdb/</td>
+				</tr>
+			</tbody>
+		</table>
+
 		<p>Não existe pontuação, quem resolver primeiro terá um lugar melhor, a ordem de entrada no grupo também influencia no placar!</p>
 		<table>
 		 <caption><h2>Desafio Level 1</h2></caption>
@@ -94,6 +131,6 @@
 			<tbody>
 			</tbody>
 		</table>
-
+	</div>
 	</body>
 </html>
