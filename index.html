@@ -4,6 +4,14 @@
 	<head>
 		<title>Engenharia Reversa</title>
 		<style type="text/css">
+			nav{
+				float:right;
+				background-color: rgba(0,0,0,0.1);
+				width:100%;
+			}
+			nav ul li{
+				   display: inline-block;
+			}
 			#site{
 				float:left;
 				width:100%;
@@ -19,12 +27,14 @@
 				text-align: left;
 			}
 			table{
-				background-color:#111;
+				background-color:#222;
 				margin-bottom:50px;
 				width:100%;
+				padding:10px;
+				border-bottom: solid 2px #111;
 			}
 			caption{
-				background-color:#222;
+				background-color:#000;
 			}
 			caption h2{
 				margin: 10px 0 10px 0;
@@ -46,7 +56,15 @@
 			#rodape{
 				text-align: center;
 				margin-top:20px;
-				background-color:black;
+				background-color:#111;
+				padding:60px;
+				border-top: solid 2px #333;
+			}
+
+			#header{
+				background-color: rgba(0,0,0,0.1);
+				background-repeat: no-repeat;
+				background-size: 100%;
 				padding:20px;
 			}
 
@@ -54,8 +72,21 @@
 	</head>
 	<body>
 		<div id="site">
-		<h1>@EngenhariaReversa - Rank</h1>
-		<p>Bem vindo a underground!</p>
+		<center id="header">
+			<img src="logo.png" width="400px">
+			<h1>Engenharia Reversa</h1>
+			<p>Bem vindo a underground!</p>
+		</center>
+
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Sobre</li>
+				<li>Desafios</li>
+				<li>Assembly</li>
+				<li>Ferramentas</li>
+			</ul>
+		</nav>
 
 		<table>
 		 <caption><h2>Sobre</h2></caption>
@@ -68,30 +99,36 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>Offset</td>
-					<td><a target="_blank" href="https://telegram.me/ReverseEngine">@ReverseEngine</td></a>
-					<td>Owner dos desafios, grupo, canal e desenvolvedor do site</td>
-				</tr>
-
-				<tr>
 					<td>Grupo</td>
-					<td><a target="_blank" href="https://telegram.me/EngenhariaReversa">https://telegram.me/EngenhariaReversa</a></td>
+					<td><a target="_blank" href="https://telegram.me/EngenhariaReversa">@EngenhariaReversa</a></td>
 					<td>Grupo de discução sobre engenharia reversa em português!</td>
 				</tr>
 
 				<tr>
 					<td>Canal</td>
-					<td><a target="_blank" href="https://telegram.me/ReverseEngineBrasil">https://telegram.me/ReverseEngineBrasil</a></td>
+					<td><a target="_blank" href="https://telegram.me/ReverseEngineBrasil">@ReverseEngineBrasil</a></td>
 					<td>Canal para compartilhamento de materiais de estudo e notícias!</td>
+				</tr>
+
+				<tr>
+					<td>Offset</td>
+					<td><a target="_blank" href="https://telegram.me/ReverseEngine">@ReverseEngine</td></a>
+					<td>Owner dos desafios, grupo, canal e desenvolvedor do site</td>
 				</tr>
 				
 			</tbody>
 		</table>
 
-
-		<p>Não existe pontuação, quem resolver primeiro terá um lugar melhor, a ordem de entrada no grupo também influencia no placar!</p>
+		<center>
+			<p>Não existe pontuação, quem resolver primeiro terá um lugar melhor, a ordem de entrada no grupo também influencia no placar!</p>
+			<p>Instruçõe: Após resolver o desafio envie uma mensagem privada no telegram para o Offset @ReverseEngine com o resultado para entrar no Rank!</p>
+		</center>
 		<table>
-		 <caption><h2>Desafio Level 1</h2></caption>
+		 <caption>
+		 	<h2>Desafio Level 1</h2>
+		 	<p>Descubra a senha!</p>
+		 	<p><a href="/desafios/senha">Download</a></p>
+		 	</caption>
 			<thead>
 				<tr>
 					<th>Nome</th>
@@ -134,7 +171,11 @@
 		</table>
 
 		<table>
-		 <caption><h2>Desafio Level 2</h2></caption>
+		 <caption>
+		 	<h2>Desafio Level 2</h2>
+		 	<p>Escolha um nome de usuário e descubra um serial valido para ele!</p>
+		 	<p><a href="/desafios/serial">Download</a></p>
+		 	</caption>
 			<thead>
 				<tr>
 					<th>Nome</th>
@@ -157,7 +198,10 @@
 		</table>
 
 		<table style="width:100%">
-		 <caption><h2>Desafio Level 3</h2></caption>
+		 <caption>
+		 	<h2>Desafio Level 3</h2>
+		 	<p>Descubra o algoritimo do Desafio Level 2 para gerar um Keygen!</p>
+		 </caption>
 			<thead>
 				<tr>
 					<th>Nome</th>
@@ -170,6 +214,11 @@
 					<td>Thiago</td>
 					<td>@thiagopeixoto</td>
 					<td>1º</td>
+				</tr>
+				<tr>
+					<td>Feroso</td>
+					<td>@f3roso</td>
+					<td>2º</td>
 				</tr>
 			</tbody>
 		</table>
